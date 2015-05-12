@@ -28,8 +28,8 @@
     "time-grunt": "^1.2.0"
   },
   "scripts": {
-    "jshint": "jshint *.js",
-    "jscs": "jscs *.js"
+    "jshint": "jshint tasks/*.js",
+    "jscs": "jscs tasks/*.js"
   },
   "pre-commit": [
     "jshint",
