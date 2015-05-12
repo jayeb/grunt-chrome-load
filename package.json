@@ -1,6 +1,6 @@
 {
   "name": "grunt-chrome-load",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Grunt task for loading or reloading Chrome tabs",
   "files": [
     "tasks/chrome-load.js"
