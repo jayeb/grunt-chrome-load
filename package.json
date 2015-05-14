@@ -1,15 +1,15 @@
 {
-  "name": "grunt-chrome-load",
+  "name": "grunt-chromeload",
   "version": "1.0.0",
   "description": "Grunt task for loading or reloading Chrome tabs",
   "files": [
-    "tasks/chrome-load.js"
+    "tasks/chromeload.js"
   ],
   "author": {
     "name": "Jason Eberle",
     "email": "eberle.jason@gmail.com"
   },
-  "repository": "jayeb/grunt-chrome-load",
+  "repository": "jayeb/grunt-chromeload",
   "license": "MIT",
   "keywords": [
     "gruntplugin",

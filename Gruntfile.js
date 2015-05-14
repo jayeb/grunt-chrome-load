@@ -20,7 +20,7 @@ module.exports = function(grunt) {
           }
       },
 
-    'chrome-load': {
+    chromeload: {
         twitter: {
             reload_pattern: 'https?:\/\/(www\.)?twitter\.com',
             new_url: 'https://www.twitter.com'

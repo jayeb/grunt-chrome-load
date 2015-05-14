@@ -1,4 +1,4 @@
-# grunt-chrome-load
+# grunt-chromeload
 Grunt task for loading or reloading tabs in Chrome.
 
 Tired of having a new tab open every time you use grunt-open after launching a server or something? Me too. `grunt-chrome-load` scans open tabs across Chrome and reloads the ones you want instead of opening a brand new one every time.
@@ -12,7 +12,7 @@ Tired of having a new tab open every time you use grunt-open after launching a s
 
 ```
 grunt.config({
-  'chrome-load': {
+  chromeload: {
       dev: {
           reload_pattern: 'https?:\/\/localhost:8080',
           new_url: 'http://localhost:8080'
@@ -32,11 +32,11 @@ For each target, you must also define a `new_url`. If the task is run and no Chr
 
 ## Et cetera
 
-If your server's hostname and port are already defined somewhere in your config, pipe these variables into `grunt-chrome-load` to DRY out your shit:
+If your server's hostname and port are already defined somewhere in your config, pipe these variables into `grunt-chromeload` to DRY out your shit:
 
 ```
 grunt.config({
-  'chrome-load': {
+  chromeload: {
       dev: {
           reload_pattern: 'https?:\/\/<%= express.dev.options.hostname %>:<%= express.dev.options.port %>',
           new_url: 'http://<%= express.dev.options.hostname %>:<%= express.dev.options.port %>'
@@ -45,11 +45,11 @@ grunt.config({
 });
 ```
 
-`grunt-chrome-load` is also great when doing local development on Chrome extensions. where reloading the `chrome://extensions` page will reload your extension package:
+`grunt-chromeload` is also great when doing local development on Chrome extensions. where reloading the `chrome://extensions` page will reload your extension package:
 
 ```
 grunt.config({
-  'chrome-load': {
+  chromeload: {
       extensions: {
           reload_pattern: 'chrome:\/\/extensions',
           new_url: 'chrome://extensions'
