@@ -7,7 +7,7 @@ module.exports = function chromeLoad(grunt) {
     grunt.log.writeln('Opening fresh tab at ' + url);
   }
 
-  grunt.registerMultiTask('chrome-load', 'Load or reload relevant Chrome tabs', function chromeLoadTask() {
+  grunt.registerMultiTask('chromeload', 'Load or reload relevant Chrome tabs', function chromeLoadTask() {
     var tabList,
         urlRegex,
         matchingTabs;
@@ -17,7 +17,6 @@ module.exports = function chromeLoad(grunt) {
     if (this.data.reload_pattern) {
       urlRegex = new RegExp(this.data.reload_pattern);
       matchingTabs = tabList.filter(urlRegex.test.bind(urlRegex));
-      console.log(matchingTabs);
 
       if (matchingTabs.length) {
         matchingTabs.forEach(function reloadTab(tabInfo) {
